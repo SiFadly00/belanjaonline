@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sistem Belanja Online</string>
+    <string-array name="daftar_kota">
+        <item>Sukabumi (Gratis)</item>
+        <item>Jakarta (Rp 15.000)</item>
+        <item>Bandung (Rp 10.000)</item>
+        <item>Luar Jawa (Rp 50.000)</item>
+    </string-array>
+</resources>

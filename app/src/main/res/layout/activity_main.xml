@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Form Belanja Online"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etNamaPembeli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Pembeli" />
+
+        <EditText
+            android:id="@+id/etNamaProduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Produk" />
+
+        <EditText
+            android:id="@+id/etHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga Satuan"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etJumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jumlah Barang"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kota Tujuan:"
+            android:layout_marginTop="8dp"/>
+
+        <Spinner
+            android:id="@+id/spKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/daftar_kota" />
+
+        <RadioGroup
+            android:id="@+id/rgMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/rbGold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+
+            <RadioButton
+                android:id="@+id/rbSilver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silver" />
+
+            <RadioButton
+                android:id="@+id/rbBiasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biasa"
+                android:checked="true" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+            <Button
+                android:id="@+id/btnHitung"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hitung" />
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reset"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#f0f0f0"
+            android:padding="10dp"
+            android:text="Ringkasan Transaksi..."
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>
